@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+      }
+      th {
+        background-color: #f4f4f4;
+      }
+      .btn {
+        background-color: #e0e086;
+        color: black;
+        padding: 10px 15px;
+        border: none;
+        cursor: not-allowed;
+        display: flex;
+        margin-left: auto;
+      }
+      .cart-totals {
+        border: 1px solid #ddd;
+        padding: 15px;
+        width: 300px;
+        margin-top: 20px;
+        margin-left: auto;
+      }
+      .checkout {
+        background-color: #bccf00;
+        color: black;
+        padding: 15px;
+        border: none;
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+        font-size: 16px;
+      }
+      .cancel-btn {
+        background-color: red;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CART</h2>
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+      </tr>
+      <tr>
+        <td><button class="cancel-btn">X</button> 10000 EAN13 Barcodes</td>
+        <td>Rs245,601.00</td>
+        <td><input type="number" value="1" min="1" style="width: 50px" /></td>
+        <td>Rs245,601.00</td>
+      </tr>
+    </table>
+
+    <button class="btn">Update cart</button>
+
+    <div class="cart-totals">
+      <h3>Cart totals</h3>
+      <p>Subtotal: Rs245,601.00</p>
+      <p>Total: Rs245,601.00</p>
+      <button class="checkout">Proceed to checkout</button>
+    </div>
+  </body>
+</html>
